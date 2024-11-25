@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Galaxy World</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#"><img src="Design_sem_nome__2_-removebg-preview.png" alt="Logo Galaxy World" class="logo"></a>
+            <ul>
+                <li><a href="indexx.html">Home</a></li>
+                <li><a href="explorer.html">Explorar</a></li>
+                <li><a href="#" class="check">PRO</a></li>
+                
+                <li><a href="#">Login</a></li>
+                
+                <li><a href="https://wa.me/5585992800768">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle"></div>
+            <div class="main-text">
+                <img src="" alt="">
+                <h3>Explore o Universo.</h3>
+                <p>O universo é vasto, misterioso e cheio de possibilidades infinitas. Cada estrela, planeta e galáxia guarda segredos esperando para ser descobertos. Ao explorar o cosmos, você expande seu conhecimento e amplia sua visão sobre o mundo e sobre nós mesmos.</p>
+
+                <p>Na <strong>Galaxy World</strong>, oferecemos a você a oportunidade de embarcar nessa jornada de descobertas. Aprenda sobre os fenômenos que regem o espaço e explore os mistérios que moldam o universo.</p>
+
+                <p>Venha desbravar o desconhecido. O universo está ao seu alcance!</p>
+
+                <h6>A partir de R$ 35.00</h6>
+                <a href="planos.html" class="btn">Adquirir Plano</a>
+                <div class="text">
+                   <h5>Escolha sua cor favorita:</h5>
+                </div>
+                
+                <a href="pagamento.html" class="teste-gratis">Teste Gratuito</a>
+            </div>
+            <div class="main-img">
+                <img src="saturn-planet-isolated-from-background-free-png.webp" alt="Imagem do iPhone" id="phone">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        /*Função de mudar o celular*/
+        function imgSlider(e){
+            document.querySelector('#phone').src = e;
+        }
+        /*Função de mudar a cor do circulo*/
+        function circleChange(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

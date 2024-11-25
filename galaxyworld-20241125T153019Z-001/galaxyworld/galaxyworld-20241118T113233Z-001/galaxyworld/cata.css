@@ -1,0 +1,97 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+    padding: 0;
+}
+
+/* Menu */
+.menu {
+    background-color: gray;
+    padding: 10px;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Catálogo */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.flashcard {
+    background-color: #4b0082;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+}
+.flashcard img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.flashcard h2, .flashcard p {
+    margin: 10px 0;
+}
+.flashcard button {
+    background-color: white;
+    color: #4b0082;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.flashcard button:hover {
+    background-color: #9400d3;
+    color: white;
+}
+/* Detalhes do produto */
+.product-details {
+    background-color: #4b0082;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+}
+.product-details img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.product-details .actions button {
+    background-color: white;
+    color: #4b0082;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+.product-details .actions button:hover {
+    background-color: #9400d3;
+    color: white;
+}
+.flashcard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+
+

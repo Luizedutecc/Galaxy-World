@@ -1,0 +1,177 @@
+Planos
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos Galaxy World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .link-voltar {
+            text-decoration: none;
+            font-size: 16px;
+            color: #6e42aa;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .flash-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #6e42aa, #d05fe3);
+            border-radius: 10px;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .card .preco {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+        }
+
+        .card .beneficios {
+            font-size: 1.1rem;
+        }
+
+        .card .btn {
+            display: inline-block;
+            background-color: #fff;
+            color: #6e42aa;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .card .btn:hover {
+            background-color: #d05fe3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="indexx.html" class="link-voltar">← Voltar para a Tela Inicial</a>
+    
+    <div class="flash-cards">
+        <!-- Flash Card Básico -->
+        <div class="card">
+            <h2>Básico</h2>
+            <div class="preco">R$ 19,90</div>
+            <ul class="beneficios">
+                <li>Acesso a conteúdos básicos</li>
+                <li>Suporte 24h</li>
+                <li>Atualizações mensais</li>
+            </ul>
+            <a href="pagamento.html" class="btn">Selecionar</a>
+        </div>
+
+        <!-- Flash Card Avançado -->
+        <div class="card">
+            <h2>Avançado</h2>
+            <div class="preco">R$ 35,00</div>
+            <ul class="beneficios">
+                <li>Acesso a conteúdos avançados</li>
+                <li>Suporte 24h</li>
+                <li>Consultoria personalizada</li>
+                <li>Atualizações semanais</li>
+            </ul>
+            <a href="pagamento.html" class="btn">Selecionar</a>
+        </div>
+
+        <!-- Flash Card Kids -->
+        <div class="card">
+            <h2>Kids</h2>
+            <div class="preco">R$ 25,00</div>
+            <ul class="beneficios">
+                <li>Conteúdo educativo para crianças</li>
+                <li>Jogos interativos</li>
+                <li>Acompanhamento dos pais</li>
+            </ul>
+            <a href="pagamento.html" class="btn">Selecionar</a>
+        </div>
+
+        <!-- Flash Card Educacional -->
+        <div class="card">
+            <h2>Educacional</h2>
+            <div class="preco">R$ 49,90</div>
+            <ul class="beneficios">
+                <li>Acesso a cursos completos</li>
+                <li>Suporte especializado</li>
+                <li>Certificação após conclusão</li>
+            </ul>
+            <a href="pagamento.html" class="btn">Selecionar</a>
+        </div>
+
+        <!-- Flash Card Galaxy Total -->
+        <div class="card">
+            <h2>Galaxy Total</h2>
+            <div class="preco">R$ 200,00</div>
+            <ul class="beneficios">
+                <li>Acesso total a todos os conteúdos</li>
+                <li>Consultoria 1-on-1</li>
+                <li>Suporte prioritário</li>
+                <li>Atualizações exclusivas</li>
+            </ul>
+            <a href="pagamento.html" class="btn">Selecionar</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

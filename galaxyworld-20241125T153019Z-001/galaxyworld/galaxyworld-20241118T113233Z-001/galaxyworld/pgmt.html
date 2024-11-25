@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <script>
+        function finalizarCompra() {
+            alert("Produto pago com sucesso!");
+        }
+
+        function resetarFormulario() {
+            if (confirm("Tem certeza que deseja resetar o formulário?")) {
+                document.getElementById("form-pagamento").reset();
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Menu -->
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="pagamento.html">Pagamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo -->
+    <main>
+        <div class="pagamento-container">
+            <h1>Informações de Pagamento</h1>
+            <form id="form-pagamento">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+                <label for="valor">Escolha o plano:</label>
+                <div class="valores">
+                    <label>
+                        <input type="radio" name="valor" value="35" required>
+                        R$ 35,00 Mensais
+                    </label>
+                    <label>
+                        <input type="radio" name="valor" value="420">
+                        R$ 420,00 Anuais
+                    </label>
+                </div>
+
+                <label for="cartao">Número do Cartão:</label>
+                <input type="text" id="cartao" name="cartao" required placeholder="Digite o número do cartão">
+
+                <label for="data-vencimento">Data de Vencimento:</label>
+                <input type="month" id="data-vencimento" name="data-vencimento" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" name="cvv" required placeholder="CVV">
+
+                <div class="botoes">
+                    <button type="button" onclick="finalizarCompra()">Finalizar Compra</button>
+                    <button type="button" onclick="resetarFormulario()">Resetar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Pagamento - Galaxy World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #3b246e, #6e42aa);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .link-voltar {
+            display: block;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .planos {
+            margin-bottom: 20px;
+        }
+
+        .planos label {
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .planos input {
+            margin-right: 10px;
+        }
+
+        .formulario-pagamento label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .formulario-pagamento input, 
+        .formulario-pagamento select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .botao-pagar {
+            display: block;
+            width: 100%;
+            background: #6e42aa;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .botao-pagar:hover {
+            background: #562f8a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="link-voltar">← Voltar para a Tela Inicial</a>
+        <h1>Tela de Pagamento</h1>
+        <form id="form-pagamento">
+            <div class="planos">
+                <h2>Selecione um Plano:</h2>
+                <label><input type="radio" name="plano" value="Básico" data-preco="19.90"> Básico - R$ 19,90</label>
+                <label><input type="radio" name="plano" value="Avançado" data-preco="39.90"> Avançado - R$ 39,90</label>
+                <label><input type="radio" name="plano" value="Kids" data-preco="29.90"> Kids - R$ 29,90</label>
+                <label><input type="radio" name="plano" value="Educacional" data-preco="49.90"> Educacional - R$ 49,90</label>
+                <label><input type="radio" name="plano" value="Galaxy Total" data-preco="99.90"> Galaxy Total - R$ 99,90</label>
+            </div>
+            <div id="total-a-pagar">
+                <h2>Total: R$ 0,00</h2>
+            </div>
+            <div class="formulario-pagamento">
+                <h2>Forma de Pagamento</h2>
+                <label for="pagamento">Selecione:</label>
+                <select id="pagamento" name="pagamento">
+                    <option value="pix">Pix</option>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                </select>
+                <label for="nome">Nome do Titular:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <button type="submit" class="botao-pagar">Pagar</button>
+        </form>
+    </div>
+    <script>
+        const planos = document.querySelectorAll('input[name="plano"]');
+        const totalPagar = document.getElementById('total-a-pagar').querySelector('h2');
+
+        planos.forEach(plano => {
+            plano.addEventListener('change', () => {
+                const preco = plano.dataset.preco;
+                totalPagar.textContent = `Total: R$ ${preco}`;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background: #2c003e; /* Fundo roxo escuro */
+    color: #fff; /* Texto branco */
+}
+
+header {
+    padding: 20px 70px;
+    background: #1d1d1f;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation .logo {
+    width: 50px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.navigation ul li a {
+    color: #888;
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation ul li a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.navigation .check {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/*Main*/
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+    position: relative;
+}
+
+.main-text img {
+    width: 15rem;
+    margin-bottom: 3vh;
+}
+
+.main-text h3, #texth {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #7a4bf4, #c13f8c, #7a4bf4); /* Gradiente roxo e rosa */
+    -webkit-background-clip: text; /* Aplica o gradiente no texto */
+    background-clip: text;
+    color: transparent; /* Deixa o texto transparente para mostrar o gradiente */
+    animation: gradientShift 3s infinite; /* Animação para mover o gradiente */
+}
+
+.main-text p {
+    margin-bottom: 1.5rem;
+}
+
+.main-text h6 {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main-text .btn {
+    padding: 10px 25px;
+    background: #7a4bf4; /* Cor roxa para o botão */
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+.main-text .btn:hover {
+    opacity: 0.85;
+}
+
+.main-text .text h5 {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-text .content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-text .content span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #888;
+    transition: all 0.5s;
+}
+
+.main-text .content span:hover {
+    opacity: 0.80;
+}
+
+#green {
+    background: #384937;
+}
+
+#pink {
+    background: #f8ddd6;
+}
+
+#blue {
+    background: #225f7e;
+}
+
+#black {
+    background: #192028;
+}
+
+#white {
+    background: #f7f2ee;
+}
+
+#red {
+    background: #ae0617;
+}
+
+.main-img {
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+.main-img img {
+    width: 500px;
+    transform: rotate(-7deg);
+}
+
+/* Ajustando a bolinha */
+
+
+/* Link de "Teste Gratuito" */
+
+.teste-gratis {
+    display: block;
+    color: #7a4bf4; /* Cor roxa para o link */
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+.teste-gratis:hover {
+    color: #fff; /* Cor branca no hover */
+    text-decoration: underline;
+}
+
+/* Animação do Gradiente passando */
+@keyframes gradientShift {
+    0% {
+        background-position: -100%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -100%;
+    }
+}
+
+
+
+header input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Flashcards */
+/* Flashcards com efeito de gradiente e hover */
+.flashcards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.flashcard {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Efeito gradiente */
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.flashcard:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumento da sombra ao passar o mouse */
+}
+
+.flashcard a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard-icon {
+    width: 90px; /* Ajuste o tamanho conforme necessário */
+    height: 90px;
+    margin-bottom: 10px; /* Espaço entre o ícone e o título */
+}
+
+.flashcard div {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo para o campo de pesquisa */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Galaxy World</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#"><img src="Design_sem_nome__2_-removebg-preview.png" alt="Logo Galaxy World" class="logo"></a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="explorer.html">Explorar</a></li>
+                <li><a href="#" class="check">PRO</a></li>
+                <li><a href="#">Gshop</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle"></div>
+            <div class="main-text">
+                <img src="" alt="">
+                <h3>Explore o Universo.</h3>
+                <p>O universo é vasto, misterioso e cheio de possibilidades infinitas. Cada estrela, planeta e galáxia guarda segredos esperando para ser descobertos. Ao explorar o cosmos, você expande seu conhecimento e amplia sua visão sobre o mundo e sobre nós mesmos.</p>
+
+                <p>Na <strong>Galaxy World</strong>, oferecemos a você a oportunidade de embarcar nessa jornada de descobertas. Aprenda sobre os fenômenos que regem o espaço e explore os mistérios que moldam o universo.</p>
+
+                <p>Venha desbravar o desconhecido. O universo está ao seu alcance!</p>
+
+                <h6>A partir de R$ 35.00</h6>
+                <a href="#" class="btn">Adquirir Curso</a>
+                <div class="text">
+                   <h5>Escolha sua cor favorita:</h5>
+                </div>
+                <div class="content">
+                    <span id="green" onclick="imgSlider('img/green.png'); circleChange('#445c42')"></span>
+                    <span id="pink" onclick="imgSlider('img/pink.png'); circleChange('#ffc9cf')"></span>
+                    <span id="blue" onclick="imgSlider('img/blue.png'); circleChange('#0b839e')"></span>
+                    <span id="black" onclick="imgSlider('img/black.png'); circleChange('#092732')"></span>
+                    <span id="white" onclick="imgSlider('img/white.png');circleChange('#e0dbd7')"></span>
+                    <span id="red" onclick="imgSlider('img/red.png');circleChange('#cf4f68')"></span>
+                </div>
+                <a href="#" class="teste-gratis">Teste Gratuito</a>
+            </div>
+            <div class="main-img">
+                <img src="saturn-planet-isolated-from-background-free-png.webp" alt="Imagem do iPhone" id="phone">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        /*Função de mudar o celular*/
+        function imgSlider(e){
+            document.querySelector('#phone').src = e;
+        }
+        /*Função de mudar a cor do circulo*/
+        function circleChange(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>

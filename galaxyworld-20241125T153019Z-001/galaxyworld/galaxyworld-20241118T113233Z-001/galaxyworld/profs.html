@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores da Galaxy World</title>
+    <link rel="stylesheet" href="stylex.css">
+</head>
+<body>
+    <header>
+        <h1 id="profy">Conheça os professores do universo!</h1>
+        <p></p>
+    </header>
+
+    <div id="professors-container">
+        <!-- Flashcards dos Professores -->
+        <div class="flashcard">
+            <img src="Design sem nome (4).png" alt="Professor Astronômico" class="professor-img">
+            <div class="flashcard-body">
+                <h2>Rafael Gomes</h2>
+                <p>Especialista em Astrofísica e Exploração Espacial.</p>
+                <button><a id="con" href="https://wa.me/5585992800768">Conversar</a></button>
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <img src="Design sem nome (5).png" alt="Professor Galáctico" class="professor-img">
+            <div class="flashcard-body">
+                <h2>Karen Vieira</h2>
+                <p>Especialista em Buracos Negros e Galáxias.</p>
+                <button><a id="con" href="https://wa.me/5585994216912">Conversar</a></button>
+            </div>
+        </div>
+
+        <div class="flashcard">
+            <img src="Design sem nome (6).png" alt="Professor Estelar" class="professor-img">
+            <div class="flashcard-body">
+                <h2>Tatianne Silva</h2>
+                <p>Especialista em Geografia.</p>
+                <button><a id="con" href="https://wa.me/5585987231900">Conversar</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="chatbox" class="hidden">
+        <div id="chat-header">
+            <h3>Conversando com: <span id="chat-name"></span></h3>
+            <button onclick="closeChat()">Fechar</button>
+        </div>
+        <div id="chat-content">
+            <p>Olá! Como posso te ajudar a entender o universo?</p>
+        </div>
+        <input type="text" id="chat-input" placeholder="Digite sua pergunta...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+    <a href="index.html" style="color: aliceblue; width: 200px;">voltar para o inicio</a>
+</body>
+</html>
